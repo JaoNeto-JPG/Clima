@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clima no Cerrado: tempo, nuvens e estações</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+    <header>
+        <h1>Clima no Cerrado</h1>
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#nuvens">Nuvens</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <div class="principal">
+            <section id="destaques" aria-labelledby="t-destaques">
+                <h2 id="t-destaques">Destaques do tempo</h2>
+
+                <article>
+                    <h3>Chuva de verão</h3>
+                    <figure>
+                        <img src="imagens/chuva.svg" alt="Nuvem escura com gotas de chuva caindo" width="320" height="200">
+                        <figcaption>Ilustração: pancada de chuva no fim da tarde</figcaption>
+                    </figure>
+                    <p>De outubro a março, a região vive a <strong>estação chuvosa</strong>. As chuvas costumam vir em pancadas, geralmente no fim da tarde.</p>
+                    <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+                </article>
+
+                <article>
+                    <h3>Tempo seco no inverno</h3>
+                    <figure>
+                        <img src="imagens/sol.svg" alt="Sol forte em um céu sem nuvens" width="320" height="200">
+                        <figcaption>Ilustração: céu aberto na estação seca</figcaption>
+                    </figure>
+                    <p>De abril a setembro chove pouco e o ar fica seco. Nessa época, <em>beber bastante água</em> faz diferença.</p>
+                    <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+                </article>
+
+                <article>
+                    <h3>Frente fria</h3>
+                    <figure>
+                        <img src="imagens/nuvens.svg" alt="Céu cinza com várias nuvens se juntando" width="320" height="200">
+                        <figcaption>Ilustração: nuvens chegando com a frente fria</figcaption>
+                    </figure>
+                    <p>Quando uma massa de ar frio avança, a temperatura <strong>cai de uma hora para outra</strong> e o vento muda de direção.</p>
+                    <p>Atualizado em <time datetime="2026-11-19">19 de novembro de 2026</time>.</p>
+                </article>
+            </section>
+
+            <section id="nuvens" aria-labelledby="t-nuvens">
+                <h2 id="t-nuvens">Tipos de nuvens</h2>
+                <div class="tabela-rolavel">
+                    <table>
+                        <caption>Principais nuvens e o tempo que anunciam</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nuvem</th>
+                                <th scope="col">Altura</th>
+                                <th scope="col">Aspecto</th>
+                                <th scope="col">Tempo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Cirrus</th>
+                                <td>Alta</td>
+                                <td>Fios finos e brancos</td>
+                                <td>Tempo estável</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cumulus</th>
+                                <td>Baixa</td>
+                                <td>Algodão com base reta</td>
+                                <td>Tempo bom</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Cumulonimbus</th>
+                                <td>Muito alta</td>
+                                <td>Torre escura e carregada</td>
+                                <td>Tempestade</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="contato" aria-labelledby="t-contato">
+                <h2 id="t-contato">Envie uma sugestão</h2>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Seus dados</legend>
+
+                        <label for="nome">Nome</label>
+                        <input id="nome" name="nome" type="text" autocomplete="name" required>
+
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+
+                        <label for="data">Data da observação</label>
+                        <input id="data" name="data" type="date">
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    </fieldset>
+                    <button type="submit">Enviar sugestão</button>
+                </form>
+            </section>
+        </div>
+
+        <aside id="dicas" aria-labelledby="t-dicas">
+            <h2 id="t-dicas">Antes de sair</h2>
+            <ul>
+                <li>Veja a previsão do dia.</li>
+                <li>Leve guarda-chuva na estação chuvosa.</li>
+                <li>Use protetor solar e beba água.</li>
+            </ul>
+            <p>Mais informações em <a href="https://portal.inmet.gov.br/">INMET</a>.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <address>Contato: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></address>
+        <p><small>&copy; 2026 · Projeto da disciplina LSW</small></p>
+    </footer>
+</body>
+</html>
