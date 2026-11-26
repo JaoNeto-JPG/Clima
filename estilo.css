@@ -223,3 +223,21 @@ footer a {
         align-items: flex-start;
     }
 }
+
+details {
+    background: #fff;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--noite);
+}
+
+details p {
+    margin-bottom: 0;
+}
